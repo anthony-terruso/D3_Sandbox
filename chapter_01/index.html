@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src = "../node_modules/d3/d3.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>D3 - Chapter 01 | Basic Data Binding</title>
+</head>
+<body>
+
+  <h1>Welcome</h1>
+  <p>This is a paragraph</p>
+    <ul id="items">
+      <li class="item">This is an item.</li>
+      <li class="item">This is an item.</li>
+      <li class="item">This is an item.</li>
+      <li class="item">This is an item.</li>
+    </ul>
+    <svg width = 600px height = 600px id = "svg"></svg>
+
+    <script src = "js/index.js"></script>
+
+<script>
+var d3_h1 = d3.select('h1'),
+    d3_items = d3.selectAll('.item');
+
+    d3_items
+    .text('Selected')
+    .style('color', 'Blue');
+
+// d3.select('h1')
+//     .text('Selected')
+//     .style('color', 'red');
+
+</script>
+</body>
+</html>
